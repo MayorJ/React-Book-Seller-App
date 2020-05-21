@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url('./components/img/couch.jpg');
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100hv;
+  animation: animate 16s ease-in-out infinite;
+}
+
+
+@keyframes animate{
+  0%{
+    background-image: url('../src/components/slider/1.jpg')
+  }
+  25%{
+    background-image: url('../src/components/slider/2.jpg')
+  }
+  50%{
+    background-image: url('../src/components/slider/3.jpg')
+  }
+  75%{
+    background-image: url('../src/components/slider/4.jpg')
+  }
+}
+
+
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #666;
+}
+
+
