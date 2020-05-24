@@ -4,29 +4,21 @@ import Todos from './components/Todos';
 import Header from './components/layout/header'
 import AddTodo from './components/AddTodo'
 import About from './components/pages/About'
-import './App.css';
 import { v4 as uuidv4 } from 'uuid'
+import axios from 'axios';
+import './App.css';
+
 
 
 class App extends Component {
 state = {
-  todos: [
-    {
-      id: uuidv4(),
-      title: 'Create the login page with React and Tailwind',
-      completed: false
-    },
-    {
-      id: uuidv4(),
-      title: 'Create the sign-up page with React and Tailwind',
-      completed: false
-    },
-    {
-      id: uuidv4(),
-      title: 'Weekly briefing of the team on developments on the project',
-      completed: false
-    }
-  ]
+  todos: []
+}
+
+componentDidMount() {
+  axios.get('https://jsonplaceholder.typicode.com/todos')
+  .then(res => console.log(res.data));
+  
 }
 
 markComplete = (id) => {
