@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <header style={headerStyle}>
-            <h1>Project CheckList</h1>
+            <h1>Todo Application</h1>
             <Link to="/" style={linkStyle} >Home</Link> | <Link style={linkStyle} to="/about">About</Link>
         </header>
     )
