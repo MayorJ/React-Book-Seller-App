@@ -3,6 +3,17 @@
   margin: 0;
   padding: 0;
 }
+@media all and (max-width: 1000) {
+  body {
+    background-size: auto cover !important;
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: auto;
+    font-size: medium;
+  }
+}
+
 
 body{
   background-image: url('./components/img/couch.jpg');
