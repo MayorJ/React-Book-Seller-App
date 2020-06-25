@@ -47,6 +47,7 @@ render(){
 
   
     return (
+      <React.Fragment>
       <Router>
         <div className="App">
           <div className="container">
@@ -62,6 +63,7 @@ render(){
           </div>
         </div>
       </Router>
+      </React.Fragment>
     );
   }
 }
